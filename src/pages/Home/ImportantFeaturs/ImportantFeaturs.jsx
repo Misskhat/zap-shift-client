@@ -26,8 +26,8 @@ const features = [
 const ImportantFeatures = () => {
     return (
         <div className="my-20 border-t-2 border-b-2 border-dashed">
-            {features.map((feature) => (
-                <div>
+            {features.map((feature, index) => (
+                <div key={index}>
                     <div className="flex space-y-5 md:space-x-10 bg-slate-50 rounded-2xl shadow-xl my-20 p-8">
                         <div className="">
                             <img className="w-[200px]" src={feature.img} alt="" />

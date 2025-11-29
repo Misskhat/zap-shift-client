@@ -49,8 +49,8 @@ const OutServices = () => {
                 </p>
             </div>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-                {services.map((service) => (
-                    <div className="p-8 bg-white text-center rounded-2xl hover:bg-[#caeb66] transition-all">
+                {services.map((service, index) => (
+                    <div key={index} className="p-8 bg-white text-center rounded-2xl hover:bg-[#caeb66] transition-all">
                         <div className="flex items-center justify-center">
                             <img src={service.img} alt="" />
                         </div>

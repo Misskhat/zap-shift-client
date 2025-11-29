@@ -14,7 +14,7 @@ const Brands = () => {
     return (
         <Swiper
             className="my-20"
-            slidesPerView={4}
+            slidesPerView={3}
             centeredSlides={true}
             spaceBetween={30}
             grabCursor={true}
@@ -26,25 +26,25 @@ const Brands = () => {
             modules={[Autoplay]}
         >
             <SwiperSlide>
-                <img src={amazon} alt="" />{" "}
+                <img src={amazon} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src={amazonVector} alt="" />{" "}
+                <img src={amazonVector} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src={casio} alt="" />{" "}
+                <img src={casio} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src={moonstar} alt="" />{" "}
+                <img src={moonstar} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src={randstad} alt="" />{" "}
+                <img src={randstad} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src={star} alt="" />{" "}
+                <img src={star} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src={starPeople} alt="" />{" "}
+                <img src={starPeople} alt="" />
             </SwiperSlide>
         </Swiper>
     );
