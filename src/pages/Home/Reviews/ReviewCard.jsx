@@ -2,14 +2,14 @@ import {Quote} from "lucide-react";
 import React from "react";
 
 const ReviewCard = ({review}) => {
-    const {username, user_photoURL, review: testimonial, date} = review;
+    const {userName, user_photoURL, review: testimonial, date} = review;
     return (
         <div className="w-full max-w-md mx-auto">
             <div className="card bg-base-100 shadow-xl border border-gray-200">
                 <div className="card-body p-8">
                     {/* Quote Icon */}
                     <div className="flex justify-start mb-4">
-                        <Quote className="w-10 h-10 text-primary opacity-20" />
+                        <Quote className="w-10 h-10 text-primary" />
                     </div>
 
                     {/* Testimonial Text */}
@@ -25,7 +25,7 @@ const ReviewCard = ({review}) => {
 
                         {/* Name & Title */}
                         <div>
-                            <h3 className="font-semibold text-lg">{username} </h3>
+                            <h3 className="font-semibold text-lg">{userName} </h3>
                             <p className="text-sm text-gray-500"> {date} </p>
                         </div>
                     </div>
